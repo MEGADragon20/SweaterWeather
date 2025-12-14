@@ -14,7 +14,7 @@ def recommend():
 
     print("reached nearly the end")
     return render_template(
-        "recommend.html",
+        "recommendation.html",
         city = city,
         weather = weather,
         outfit = outfit
