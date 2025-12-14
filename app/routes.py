@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request, render_template
 from .weather import get_weather
 from .recommend import recommend_clothing
 
@@ -19,4 +19,4 @@ def recommend():
 
 @bp.route("/")
 def home():
-    return "hello world"
+    return render_template("index.html")
