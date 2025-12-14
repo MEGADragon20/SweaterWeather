@@ -16,3 +16,7 @@ def recommend():
         "weather": weather,
         "recommendation": outfit
     })
+
+@bp.route("/")
+def home():
+    return "hello world"
