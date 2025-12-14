@@ -4,6 +4,7 @@ import requests
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 def get_weather(city):
+    print("reached get_weather")
     url = "https://api.openweathermap.org/data/2.5/weather"
     params = {
         "q": city,
@@ -13,6 +14,7 @@ def get_weather(city):
 
     r = requests.get(url, params=params, timeout=5)
     r.raise_for_status()
+    print("r: ", r)
     data = r.json()
 
     return {
