@@ -11,11 +11,12 @@ def recommend():
     weather = get_weather(city)
     outfit = recommend_clothing(weather)
 
-    return jsonify({
-        "city": city,
-        "weather": weather,
-        "recommendation": outfit
-    })
+    return render_template(
+        "recommend.html",
+        city = city,
+        weather = weather,
+        outfit = outfit
+    )
 
 @bp.route("/")
 def home():
