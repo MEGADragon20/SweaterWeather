@@ -11,11 +11,8 @@ body {
     min-height: 100vh;
     background: linear-gradient(180deg, #1f2933, #111827);
     color: #e5e7eb;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 
 /* --- Main container on index page --- */
 .formdiv {
@@ -87,3 +84,29 @@ p {
     margin-top: 0.5rem;
     color: #d1d5db;
 }
+
+.page {
+    padding: 2rem;
+}
+
+.center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background: #3b82f6;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+}
+
+.back:hover {
+    background: #2563eb;
+}
+

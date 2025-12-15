@@ -5,13 +5,17 @@
     <title>Clothing Recommendation</title>
 </head>
 <body>
-    <a href="/"><button>Back</button></a>
-    <h1>{{ city }}</h1>
+    <div class="page">
+        <a href="/" class="back">Back</a>
 
-    <p>Temperature: {{ weather.temp }} °C</p>
-    <p>Wind: {{ weather.wind }} m/s</p>
+        <h1>{{ city }}</h1>
 
-    <h2>Recommendation</h2>
-    <p>{{ outfit }}</p>
-    </body>
+        <p>Temperature: {{ weather.temp }} °C</p>
+        <p>Wind: {{ weather.wind }} m/s</p>
+
+        <h2>Recommendation</h2>
+        <p>{{ outfit }}</p>
+    </div>
+</body>
+
 </html>
