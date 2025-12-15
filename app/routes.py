@@ -7,12 +7,11 @@ bp = Blueprint("main", __name__)
 @bp.route("/recommend")
 def recommend():
     city = request.args.get("city", "Munich")
-    print("reached ", city)
 
     weather = get_weather(city)
+    
     outfit = recommend_clothing(weather)
 
-    print("reached nearly the end")
     return render_template(
         "recommendation.html",
         city = city,
