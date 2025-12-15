@@ -6,6 +6,8 @@ def recommend_clothing(weather):
         base = "winter jacket"
     elif temp < 15:
         base = "light jacket"
+    elif temp < 25:
+        base = "sweater"
     else:
         base = "t-shirt"
 
