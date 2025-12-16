@@ -110,6 +110,6 @@ p {
     background: #2563eb;
 }
 
-.city::first-letter{
-    text-transform: uppercase;
+.city{
+    text-transform: capitalize;
 }
