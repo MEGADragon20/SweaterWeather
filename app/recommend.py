@@ -1,16 +1,20 @@
 def recommend_clothing(weather):
     temp = weather["temp"]
     rain = weather["rain"]
+    wind = weather["wind"]
 
     if temp < 5:
-        base = "winter jacket"
+        base = "Winter jacket"
     elif temp < 15:
-        base = "light jacket"
+        base = "Light jacket"
     elif temp < 25:
-        base = "sweater"
+        base = "Sweater"
     else:
-        base = "t-shirt"
+        base = "T-shirt"
 
-    if rain > 0:
-        return f"{base} and a raincoat"
-    return base
+    if rain > 50 and wind < 8:
+        return f"{base} and an umbrella."
+    elif rain > 0:
+        return f"{base} and a raincoat."
+    
+    return f"{base}."
